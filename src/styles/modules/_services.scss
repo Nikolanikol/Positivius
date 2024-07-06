@@ -1,0 +1,161 @@
+.container {
+}
+.servise {
+
+		// .servise__row
+
+		&__row {
+		}
+}
+.services {
+    padding-bottom: 140px;
+		// .services__header
+
+		&__header {
+		}
+
+		// .services__grid
+
+		&__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 40px;
+            padding-bottom: 120px;
+		}
+
+		// .services__item
+
+		&__item {
+		}
+        &__add{
+
+        }
+}
+.block-desc {
+
+		// .block-desc__title
+
+		&__title {
+		}
+
+		// .block-desc__desc
+
+		&__desc {
+		}
+}
+@media(max-width: 425.9px){
+    .services__grid{
+        grid-template-columns: 1fr;
+    }
+    .block-desc{
+        flex-direction: column;
+         row-gap: 30px;
+         padding-bottom: 30px;
+         &__title{
+            font-size: 36px;
+         }
+         &__desc{
+            font-size: 16px;
+            text-align: center;
+         }
+    }
+    .services {
+
+		// .services__item
+
+		&__item {
+		}
+}
+.card {
+    max-width: 390px;
+    position: relative;
+
+		// .card__bg-gray
+
+		&__bg-gray {
+		}
+
+		// .card__row
+
+		&__row {
+            justify-content: space-between;
+		}
+
+		// .card__title
+
+		&__title {
+            font-size: 26px;
+            line-height: 1.26;
+            width: 194px;
+		}
+
+		// .card__bg-green
+
+		&__bg-green {
+            
+		}
+
+		// .card__link
+
+		&__link {
+            color: transparent;
+		}
+
+		// .card__img
+
+		&__img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 165px;
+            bottom: 30px;
+            right: 30px;
+		}
+
+		// .card__bg-black
+
+		&__bg-black {
+		}
+}
+.add {
+    padding: 50px;
+    // .add__row
+
+    &__row {
+    }
+
+    // .add__body
+
+    &__body {
+    }
+
+    // .add__title
+
+    &__title {
+        font-size: 26px;
+    }
+
+    // .add__desc
+
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    // .add__button
+
+    &__button {
+    }
+
+    // .add__img
+
+    &__img {
+        display: none;
+    }
+}
+
+
+}
+
+

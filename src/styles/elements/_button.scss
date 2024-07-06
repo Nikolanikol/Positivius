@@ -1,0 +1,25 @@
+.button{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px 35px;
+    border: 1px solid $black;
+    border-radius: 14px;
+}
+.button-black{
+    background-color: $black;
+    color: $white;
+}
+.button-green{
+    background-color: $green;
+
+    color: $black;
+}
+.button-wide{
+    padding-block: 208px;
+}
+.button:hover{
+    position: relative;
+    top: 2px;
+    color: $green;
+    transition: all 3ms ease-in;
+}

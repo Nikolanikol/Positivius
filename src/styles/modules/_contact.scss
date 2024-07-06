@@ -1,0 +1,99 @@
+
+.contact {
+    padding-bottom: 140px;
+		// .contact__header
+
+        & .container{
+
+        }
+    
+		&__header {
+		}
+
+		// .contact__body
+
+		&__body {
+            width: 100%;
+            align-items: start;
+            padding-block: 60px 80px;
+            padding-left: 100px;
+            border-radius: 45px;
+            background-color: $grey;
+            position: relative;
+            overflow: hidden;
+		}
+        &__body::after{
+            content: '';
+            width: 691px;
+            height: 648px;
+            background-image: url(img/contact/bg.svg);
+
+            position: absolute;
+            top: 55px;
+            right: -54%;
+            transform: translateX(-50%);
+        }
+		// .contact__form
+
+		&__form {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            max-width: 556px;
+		}
+
+		// .contact__radio
+
+		&__radio {
+            display: flex;
+            flex-direction: reverse;
+            justify-content: flex-start;
+            column-gap: 14px;
+            padding-bottom: 40px;
+		}
+        #quote{
+            margin-left: 14px;
+        }
+        &__row{
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+            align-items: stretch;
+        }
+        &__row input{
+            border: 1px solid $black;
+            border-radius: 14px;
+            color: rgb(137, 137, 137);
+            background-color: #fff;
+            padding-left: 30px ;
+            padding-block:18px;
+        }
+        &__row textarea{
+            border: 1px solid $black;
+            border-radius: 14px;
+            background-color: #fff;
+            color: rgb(137, 137, 137);
+            height: 190px;
+            padding-left: 30px ;
+            padding-block:18px;
+        }
+    
+}
+@media(max-width: 425.9px){
+    .contact__body::after{
+        content: '';
+        width: 1px;
+        aspect-ratio: 1;
+    }
+    .contact__body{
+        padding: 40px 30px 50px 40px;
+    }
+    .contact__radio{
+        display: block;
+        text-align: center;
+
+    }
+    #quote {
+        margin-left: 60px;
+    }
+}

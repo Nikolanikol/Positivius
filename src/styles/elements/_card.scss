@@ -1,0 +1,83 @@
+.card {
+    padding: 50px;
+    display: flex;
+    justify-content: start;
+    column-gap: 76px ;
+    border: 1px solid black;
+    box-shadow: 0 5px 0 rgb(25, 26, 35) ;
+    border-radius: 45px;
+    max-width: 600px;
+    height: 310px;
+    // .card__row
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        row-gap:    93px ;
+        width: 210px;
+    }
+
+    // .card__title
+
+    &__title {
+        font-size: 30px;
+        line-height: 1.26;
+    }
+
+    // .card__link
+
+    &__link {
+        padding-left: 56px;
+        font-weight: 400;
+        font-size: 20px;
+        position: relative;
+        line-height: 2;
+    }
+    &__link::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        background-color: $black;
+        width: 41px;
+        aspect-ratio: 1;
+        background-image: url(icons/arrow_green.svg);
+        background-position: center;
+        background-size: initial;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 1px solid $black;
+        transform: translateY(-50%);
+    }
+    &__link:hover{
+        position: relative;
+        top: 3px;
+        transition: all 0.3ms ease-in;
+    }
+    // .card__img
+
+
+    &__img {
+        max-width: 210px;
+    }
+
+}
+.card:nth-child(3) .card__link::after, .card:nth-child(6) .card__link::after{
+    background-color: $grey;
+}
+// .card__title-green{
+//     background-color: $green;
+// }
+// .card__title-gray{
+//     background-color: $grey;
+// }
+.card__bg-gray{
+    background-color: $grey;
+}
+.card__bg-green{
+    background-color: $green;
+}
+.card__bg-black{
+    background-color: $black;
+}

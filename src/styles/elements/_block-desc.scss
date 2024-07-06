@@ -1,0 +1,15 @@
+.block-desc{
+    display: flex;
+    column-gap: 47px;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.block-desc__title{
+    font-weight: 500;
+    font-size: 40px;
+    background-color: $green;
+}
+.block-desc__desc{
+    font-weight: 400;
+    max-width: 580px;
+}

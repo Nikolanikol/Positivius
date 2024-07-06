@@ -1,0 +1,50 @@
+.add {
+
+    padding-left: 60px;
+    background-color: $grey;
+    border-radius: 45px;
+    // .add__row
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 162px;
+    }
+
+    // .add__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 26px;
+        align-items: start;
+    }
+
+    // .add__title
+
+    &__title {
+        font-size: 30px;
+        line-height: 1.26;
+    }
+
+    // .add__desc
+
+    &__desc {
+        font-weight: 400;
+        line-height: 1.27;
+    }
+
+    // .add__button
+
+    &__button {
+    }
+
+    // .add__img
+
+    &__img {
+        margin-block: -23px;
+    }
+}
+.button {
+}

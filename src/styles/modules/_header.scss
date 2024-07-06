@@ -1,0 +1,211 @@
+
+.header {
+    padding-top: 80px;
+    padding-bottom: 90px;
+
+		// .header__row
+
+		&__row {
+            display: flex;
+            flex-direction: row;
+            column-gap: 75px;
+            align-items: center;
+		}
+
+		// .header__logo
+        &__logo img:last-child{
+            width: 111px;
+            height: 18px;
+        }
+        &__logo img:first-child{
+            width: 23px;
+            aspect-ratio: 1;
+        }
+		&__logo a {
+            display: flex;
+            column-gap: 15px;
+            align-items: center;
+            
+		}
+        &__logo a:hover{
+            position: relative;
+            top: 2px;
+            transition: all 3ms ease-in;
+        }
+        // &__logo::after{
+        //     content: '';
+        //     position: absolute;
+        //     display: block;
+        //     top: 0;
+        //     left: 0;
+        //     width: 35px;
+        //     aspect-ratio: 1;
+        //     background-image: url(icons/logo_black.svg);
+        // }
+		// .header__nav
+
+		&__nav {
+            margin-left: auto;
+		}
+
+		// .header__button
+
+		&__button {
+		}
+}
+.nav {
+
+		// .nav__list
+
+		&__list {
+            font-weight: 400;
+            font-size: 20px;
+            display: flex;
+            column-gap: 40px;
+		}
+
+		// .nav__item
+
+		&__item a:hover{
+            position: relative;
+            top: 2px;
+            color: $green;
+            transition: all 3ms ease-in;
+		}
+
+}
+.header__burger{
+    display: inline-block;
+    padding: 10px;
+    height: 50px;
+    display: none;
+}
+.burger-menu{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+    position: relative;
+    border-radius: 5px;
+
+}
+.burger-menu:after{
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+    position: absolute;
+    left: 0;
+    top: -8px;
+    border-radius: 5px;
+
+}
+.burger-menu:before{
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    border-radius: 5px;
+}
+.button {
+}
+@media(max-width: 425.9px){
+    .header__nav{
+        
+    }
+    .header {
+        padding-top: 32px;
+        padding-bottom: 43px;
+    }
+    .header__button{
+        display: none;
+    }
+    .header__burger{
+        display: block;
+
+    }
+    .header__row{
+        justify-content: space-between;
+    }
+    .nav__list{
+        position: absolute;
+        left: -300%;
+        top: 0;
+    }
+    .header__nav.header__nav-active{
+
+    }
+    .header__nav.header__nav-active .nav__list{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        row-gap: 30px;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: $grey;
+        z-index: 1;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+    .header__burger.burger-menu-active .burger-menu{
+        background-color: transparent;
+    }
+    .header__burger.burger-menu-active .burger-menu::after{
+        top: 0px;
+        transform: rotateZ(45deg);
+    }
+    .header__burger.burger-menu-active .burger-menu::before{
+        top: 0px;
+        transform: rotateZ(-45deg);
+    }
+}
+
+.header__row.header__row-black{
+    color: $white;
+    text-decoration: underline;
+}
+.header__row.header__row-black a{
+    color: $white;
+}
+.header__social-list{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+.header__social-list li{
+    background-color: $white;
+    border-radius: 50%;
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__social-list li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__row.header__row-black{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+}
+.header__row.header__row-black .header__nav{
+    margin-left: 0px;
+}
+.header__row.header__row-black .nav__list{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px ;
+    text-align: center;
+}

@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    max-width: 1270px;
+    padding-inline: 15px;
+    margin: 0 auto;
+    outline: 1px;
+}
+body{
+    font-family:"Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: $black;
+}
+body a{
+    color: $black;
+}

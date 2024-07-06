@@ -1,0 +1,138 @@
+.container {
+}
+.digital {
+    padding-bottom: 140px;
+		// .digital__row
+
+		&__row {
+            display: flex;
+            column-gap: 108px;
+		}
+
+		// .digital__body
+
+		&__body {
+            display: flex;
+            flex-direction: column;
+            row-gap: 35px;
+            align-items: start;
+            max-width: 530px;
+		}
+
+		// .digital__title
+
+		&__title {
+            font-weight: 500;
+            font-size: 60px;
+		}
+
+		// .digital__desc
+
+		&__desc {
+            font-size: 20px;
+            font-weight: 400;
+		}
+
+		// .digital__button
+
+		&__button {
+		}
+
+		// .digital__img
+
+		&__img {
+		}
+
+		// .digital__partners
+
+		&__partners {
+            display: flex;
+            column-gap: 95px;
+            align-items: center;
+		}
+
+		// .digital__card
+
+		&__card {
+		}
+}
+@media(max-width: 425.9px){
+    .digital__row{
+        flex-direction: column-reverse;
+    }
+    .digital__partners{
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+    .digital {
+        position: relative;
+        padding-top: 156px;
+		// .digital__row
+
+		&__row {
+            padding-bottom: 60px;
+        }
+        
+		// .digital__body
+        
+		&__body {
+            align-items: stretch;
+		}
+
+		// .digital__title
+
+		&__title {
+            font-size: 43px;
+            position: absolute;
+            top: 0;
+            left: 15px;
+		}
+
+		// .digital__desc
+
+		&__desc {
+            font-weight: 400;
+            font-size: 16px;
+		}
+
+		// .digital__button
+
+		&__button {
+
+		}
+
+		// .digital__img
+
+		&__img {
+            width: 360px;
+            height: 310px;
+		}
+        .digital .container{
+            overflow: hidden;
+        }
+        .digital {
+
+            // .digital__partners
+    
+            &__partners {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 37px;
+                padding-bottom: 67px;
+            }
+    
+            // .digital__card
+            &__card{
+
+            }
+            &__card:nth-child(1), &__card:nth-child(2),&__card:nth-child(3){
+                margin-left: 47px;
+            }
+            &__card:nth-child(4), &__card:nth-child(5),&__card:nth-child(6){
+                margin-left: -47px;
+            }
+    }
+    
+}
+
+}
