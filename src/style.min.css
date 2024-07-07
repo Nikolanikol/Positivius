@@ -1038,7 +1038,7 @@ body a {
 .footer-body__list li:first-child {
   background-color: #b9ff66;
   font-weight: 500;
-  padding-bottom: 7px;
+  margin-bottom: 7px;
   border-radius: 8px;
   color: #191A23;
   padding-inline: 7px;
@@ -1057,6 +1057,9 @@ body a {
   padding: 22px 35px;
   border: 1px solid #ffffff;
   border-radius: 14px;
+}
+.footer-body__submit {
+  background-color: #b9ff66 !important;
 }
 .footer-body__submit:hover {
   color: #191A23;

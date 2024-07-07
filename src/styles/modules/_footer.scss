@@ -64,7 +64,7 @@
         &__list li:first-child{
             background-color: $green;
             font-weight: 500;
-            padding-bottom: 7px;
+            margin-bottom: 7px;
             border-radius: 8px;
             color: $black;
             padding-inline: 7px;
@@ -90,7 +90,10 @@
             border: 1px solid $white;
             border-radius: 14px;
 		}
+            &__submit{
+                  background-color: $green !important;
 
+            }
 		// .footer-body__submit
 
 		&__submit:hover{
